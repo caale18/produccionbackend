@@ -1,0 +1,152 @@
+[
+    {
+        "name" : "SSD de 240 GB",
+        "price" : "450",
+        "description" : "Disco duro de estado solido que permite una mejor velocidad en la computadora.",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Discos_duros",
+        "seller" : "Intelaf",
+        "stock" : 50,
+        "numOfReviews" : 20,
+        "reviews" : []
+    },
+    {
+        "name" : "Funda de Laptop TECH",
+        "price" : "150",
+        "description" : "Funda para laptop de 15 pulgadas",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Accesorios",
+        "seller" : "Amazon",
+        "stock" : 30,
+        "numOfReviews" : 40,
+        "reviews" : []
+    },
+    {
+        "name" : "Dell Alienware",
+        "price" : "15000",
+        "description" : "Computadora tipo gamer con 16 GB de ram, core i7 de 13th, 1 TB de estado M.2, RTX 4060 y Windows 11",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Laptops",
+        "seller" : "Intelaf",
+        "stock" : 3,
+        "numOfReviews" : 10,
+        "reviews" : []
+    },
+    {
+        "name" : "HP Omen",
+        "price" : "18000",
+        "description" : "Laptop gamer con 32 GB de RAM, Intel Core i9, 1TB SSD, Nvidia RTX 4080 y Windows 11",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Laptops",
+        "seller" : "Intelaf",
+        "stock" : 5,
+        "numOfReviews" : 8,
+        "reviews" : []
+    },
+    {
+        "name" : "Logitech G Pro X",
+        "price" : "1500",
+        "description" : "Audífonos profesionales para gaming con sonido envolvente y micrófono desmontable",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Audifonos",
+        "seller" : "Intelaf",
+        "stock" : 10,
+        "numOfReviews" : 5,
+        "reviews" : []
+    },
+    {
+        "name" : "Samsung Odyssey G7",
+        "price" : "10000",
+        "description" : "Monitor curvo de 27 pulgadas con resolución 2K, 240Hz y tecnología G-Sync",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Accesorios",
+        "seller" : "Intelaf",
+        "stock" : 7,
+        "numOfReviews" : 4,
+        "reviews" : []
+    },
+    {
+        "name" : "Corsair RM850x",
+        "price" : "3200",
+        "description" : "Fuente de poder 850W totalmente modular, certificada 80 Plus Gold",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Accesorios",
+        "seller" : "Intelaf",
+        "stock" : 4,
+        "numOfReviews" : 3,
+        "reviews" : []
+    },
+    {
+        "name" : "Cargador USB-C Lenovo",
+        "price" : "600",
+        "description" : "Cargador portátil USB-C compatible con laptops Lenovo, 65W de potencia",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Cargadores",
+        "seller" : "Intelaf",
+        "stock" : 15,
+        "numOfReviews" : 2,
+        "reviews" : []
+    },
+    {
+        "name" : "HP Pavilion Desktop",
+        "price" : "12000",
+        "description" : "Desktop con Intel Core i5 de 12th, 16 GB de RAM, 512 GB SSD, y tarjeta gráfica Nvidia GTX 1660",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Desktop",
+        "seller" : "Intelaf",
+        "stock" : 6,
+        "numOfReviews" : 7,
+        "reviews" : []
+    },
+    {
+        "name" : "Acer Aspire 5",
+        "price" : "9000",
+        "description" : "Laptop con Intel Core i5, 8 GB de RAM, 512 GB SSD y pantalla Full HD de 15.6 pulgadas",
+        "ratings" : 0,
+        "images" : [{
+            "public_id" : "no",
+            "url" : "no"
+        }],
+        "category" : "Laptops",
+        "seller" : "Intelaf",
+        "stock" : 12,
+        "numOfReviews" : 11,
+        "reviews" : []
+    }
+]
