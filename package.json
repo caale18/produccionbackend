@@ -4,9 +4,9 @@
   "description": "Sitio web completo",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node backend/server.js",
-    "dev": "NODE_ENV=development node backend/server.js",
-    "prod": "NODE_ENV=production nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Carlos Rodríguez",
