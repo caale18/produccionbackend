@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
-    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "dev": "NODE_ENV=development nodemon backend/server.js",
+    "prod": "NODE_ENV=production nodemon backend/server.js",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Carlos Rodríguez",
