@@ -3,18 +3,18 @@ const Product = require('../models/product');
 
 const ErrorHandler = require('../utils/errorHandler');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
-const order = require('../models/order');
+
 
 // Creamos un nuevo orden => /api/v1/order/new
 exports.newOrder = catchAsyncErrors(async (req, res, next) => {
     const {
-        orderItems,
+        orderId,
         shippingInfo,
+        orderItems,
         itemsPrice,
         taxPrice,
         shippingPrice,
-        totalPrice,
-        paymentInfo
+        totalPrice
 
     } = req.body;
 
@@ -25,13 +25,17 @@ exports.newOrder = catchAsyncErrors(async (req, res, next) => {
         taxPrice,
         shippingPrice,
         totalPrice,
-        paymentInfo,
+        paymentInfo: {
+            id: orderId,
+            status: 'COMPLETED',  // Configura el estado como completado si el pago fue exitoso
+        },
         paidAt: Date.now(),
-        user: req.user._id
-    })
+        user: req.user.id,
+    });
 
     res.status(200).json({
         success: true,
+        message: "Order has been placed successfully",
         order
     })
 })

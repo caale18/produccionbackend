@@ -3,19 +3,45 @@ const Product = require('../models/product')
 const ErrorHandler = require('../utils/errorHandler');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const APIFeatures = require('../utils/apiFeatures')
+const cloudinary = require('cloudinary');
 
 // Crear nuevo producto => /app/v1/admin/product/new
-exports.newProduct = catchAsyncErrors ( async (req, res, next) => {
+exports.newProduct = catchAsyncErrors(async (req, res, next) => {
+    let images = [];
 
+    // Verificar si 'images' es un string o un array
+    if (typeof req.body.images === 'string') {
+        images.push(req.body.images);
+    } else if (Array.isArray(req.body.images)) {
+        images = req.body.images;
+    }
+
+    let imagesLinks = [];
+
+    // Subir imágenes a Cloudinary
+    for (let i = 0; i < images.length; i++) {
+        const result = await cloudinary.v2.uploader.upload(images[i], {
+            folder: 'products',
+        });
+
+        imagesLinks.push({
+            public_id: result.public_id,
+            url: result.secure_url
+        });
+    }
+
+    // Agregar links de las imágenes y usuario al cuerpo de la solicitud
+    req.body.images = imagesLinks;
     req.body.user = req.user.id;
 
+    // Crear producto
     const product = await Product.create(req.body);
 
     res.status(201).json({
         success: true,
         product
-    })
-})
+    });
+});
 
 
 //Obtener todos los productos => /api/v1/products?keyword=laptop
@@ -40,6 +66,18 @@ exports.getProducts = catchAsyncErrors ( async (req, res, next) => {
         })
     }, 400);
 })
+
+// Obtener todos los productos (admin) => /api/v1/admin/products
+exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
+    const products = await Product.find();
+    
+    // Respuesta exitosa
+    res.status(200).json({
+        success: true,
+        products,
+    });
+});
+
 
 //Obtener detalles de un solo producto => /api/v1/product/:id
 
@@ -96,13 +134,15 @@ exports.deleteProduct = catchAsyncErrors ( async (req, res, next) => {
 })
 
 
-// Crea una nueva revision => /api/v1/review
+// Crea una nueva resena => /api/v1/review
 exports.createProductReview = catchAsyncErrors( async(req, res, next) => {
 
     const { rating, comment, productId } = req.body;
+    
+    
 
     const review = {
-        user: req.user._id,
+        user: req.user.id,
         name: req.user.name,
         rating: Number(rating),
         comment

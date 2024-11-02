@@ -4,7 +4,8 @@ const connectDatabase = require('./config/database')
 
 // ese const de dotenv  no me sirve, solo necesito usar require(dotenv).config()
 //const dotenv = require('dotenv');
-
+const dotenv = require('dotenv');
+const cloudinary = require('cloudinary')
 //Manjerar las excepciones no detectadas
 process.on('uncaughtException', err => {
     console.log(`ERROR: ${err.stack}`);
@@ -15,6 +16,11 @@ process.on('uncaughtException', err => {
 //Configuración del archivo                       //esto te lo comentare porque no me sirve para conectar a mongo atlas que es el web  por lo que comentare esto y si le pongo -- es porque es algo que ya estaba pe 
 
 //--------------------------------------dotenv.config({ path: 'backend/config/config.env' })
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key:  process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+})
 
 //Conectando la base de datos
 connectDatabase();

@@ -5,8 +5,8 @@
         "description" : "Disco duro de estado solido que permite una mejor velocidad en la computadora.",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Discos_duros",
         "seller" : "Intelaf",
@@ -20,8 +20,8 @@
         "description" : "Funda para laptop de 15 pulgadas",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Accesorios",
         "seller" : "Amazon",
@@ -35,8 +35,8 @@
         "description" : "Computadora tipo gamer con 16 GB de ram, core i7 de 13th, 1 TB de estado M.2, RTX 4060 y Windows 11",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Laptops",
         "seller" : "Intelaf",
@@ -50,8 +50,8 @@
         "description" : "Laptop gamer con 32 GB de RAM, Intel Core i9, 1TB SSD, Nvidia RTX 4080 y Windows 11",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Laptops",
         "seller" : "Intelaf",
@@ -65,8 +65,8 @@
         "description" : "Audífonos profesionales para gaming con sonido envolvente y micrófono desmontable",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Audifonos",
         "seller" : "Intelaf",
@@ -80,8 +80,8 @@
         "description" : "Monitor curvo de 27 pulgadas con resolución 2K, 240Hz y tecnología G-Sync",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Accesorios",
         "seller" : "Intelaf",
@@ -95,8 +95,8 @@
         "description" : "Fuente de poder 850W totalmente modular, certificada 80 Plus Gold",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Accesorios",
         "seller" : "Intelaf",
@@ -110,8 +110,8 @@
         "description" : "Cargador portátil USB-C compatible con laptops Lenovo, 65W de potencia",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Cargadores",
         "seller" : "Intelaf",
@@ -125,8 +125,8 @@
         "description" : "Desktop con Intel Core i5 de 12th, 16 GB de RAM, 512 GB SSD, y tarjeta gráfica Nvidia GTX 1660",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Desktop",
         "seller" : "Intelaf",
@@ -140,8 +140,8 @@
         "description" : "Laptop con Intel Core i5, 8 GB de RAM, 512 GB SSD y pantalla Full HD de 15.6 pulgadas",
         "ratings" : 0,
         "images" : [{
-            "public_id" : "no",
-            "url" : "no"
+            "public_id" : "",
+            "url" : ""
         }],
         "category" : "Laptops",
         "seller" : "Intelaf",
